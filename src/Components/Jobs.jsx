@@ -4,37 +4,43 @@ import { Container, Row, Col, Nav, Tab } from "react-bootstrap";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
+import jobPhoto1 from "../Assets/houseWash.png";
+import jobPhoto2 from "../Assets/patioWash.png";
+import jobPhoto3 from "../Assets/patioWash2.png";
+import jobPhoto4 from "../Assets/powerWash.png";
+import jobPhoto5 from "../Assets/trailerWash.png";
+
 export const Jobs = () => {
   const projects = [
     {
       title: "Pavement Cleaning",
       description: "Left Clean enough to eat off of",
-      imgUrl: "",
+      imgUrl: jobPhoto2,
     },
     {
       title: "Trailer Cleaning",
       description: "Left Clean enough to eat off of",
-      imgUrl: "",
+      imgUrl: jobPhoto5,
     },
     {
       title: "House cleaning",
       description: "Left Clean enough to eat off of",
-      imgUrl: "",
+      imgUrl: jobPhoto1,
     },
     {
       title: "Sidewalk Cleaning",
       description: "Left Clean enough to eat off of",
-      imgUrl: "",
+      imgUrl: jobPhoto3,
     },
     {
       title: "Car Cleaning",
       description: "Left Clean enough to eat off of",
-      imgUrl: "",
+      imgUrl: jobPhoto5,
     },
     {
       title: "Carpet Cleaning",
       description: "Left Clean enough to eat off of",
-      imgUrl: "",
+      imgUrl: jobPhoto1,
     },
   ];
 
@@ -58,22 +64,7 @@ export const Jobs = () => {
                     praesentium nemo amet eos velit.
                   </p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                    <Nav
-                      variant="pills"
-                      className="nav-pills mb-5 justify-content-center align-items-center"
-                      id="pills-tab"
-                    >
-                      <Nav.Item>
-                        <Nav.Link eventKey="first">Tab 1</Nav.Link>
-                      </Nav.Item>
-                      <Nav.Item>
-                        <Nav.Link eventKey="second">Tab 2</Nav.Link>
-                      </Nav.Item>
-                      <Nav.Item>
-                        <Nav.Link eventKey="third">Tab 3</Nav.Link>
-                      </Nav.Item>
-                    </Nav>
-                    <Tab.Content>
+                    <Tab.Content className="justify-content-center align-items-center mb-5 ">
                       <Tab.Pane eventKey="first">
                         <Row>
                           {projects.map((project, index) => {

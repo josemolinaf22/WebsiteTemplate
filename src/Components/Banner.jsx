@@ -8,7 +8,7 @@ import "animate.css";
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const toRotate = ["We're here to help you", "and your business"];
+  const toRotate = ["Unleash Their Shine!"];
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const period = 2000;
@@ -57,10 +57,10 @@ export const Banner = () => {
                     isVisible ? "animate__animated animate__fadeIn" : " "
                   }
                 >
-                  <span className="tagline"> {text} </span>
+                  <span className="tagline">We're here to help! </span>
                   <h1>
-                    {"We're here to help you "}
-                    <span className="wrap">and your business</span>
+                    {"Revitalize Your Surfaces"} <br />
+                    <span className="wrap">{text}</span>
                   </h1>
                   <p>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -82,7 +82,7 @@ export const Banner = () => {
               {({ isVisible }) => (
                 <div
                   className={
-                    isVisible ? "animate__animated animate__zoomIn" : ""
+                    isVisible ? "animate__animated animate__zoomIn" : "hidden"
                   }
                 >
                   <img

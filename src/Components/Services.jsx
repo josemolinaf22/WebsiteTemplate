@@ -5,6 +5,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import TrackVisibility from "react-on-screen";
 import "animate.css";
 
+import { MdCleaningServices } from "react-icons/md";
+import { TbWash, TbWashTemperature6, TbWashGentle } from "react-icons/tb";
+
 export const Services = () => {
   const responsive = {
     superLargeDesktop: {
@@ -35,7 +38,7 @@ export const Services = () => {
               {({ isVisible }) => (
                 <div
                   className={
-                    isVisible ? "animate__animated animate__fadeIn" : ""
+                    isVisible ? "animate__animated animate__fadeIn" : "hidden"
                   }
                 >
                   <div className="service-box">
@@ -52,19 +55,23 @@ export const Services = () => {
                       className="service-slider"
                     >
                       <div className="item">
-                        <img src="" alt="service one" />
+                        <MdCleaningServices size="small" />
+                        <br /> <br />
                         <h5>Service 1</h5>
                       </div>
                       <div className="item">
-                        <img src="" alt="service two" />
+                        <TbWash size="small" />
+                        <br /> <br />
                         <h5>Service 2</h5>
                       </div>
                       <div className="item">
-                        <img src="" alt="service three" />
+                        <TbWashGentle size="small" />
+                        <br /> <br />
                         <h5>Services 3</h5>
                       </div>
                       <div className="item">
-                        <img src="" alt="service four" />
+                        <TbWashTemperature6 size="small" />
+                        <br /> <br />
                         <h5>Services 4 </h5>
                       </div>
                     </Carousel>
